@@ -26,12 +26,10 @@ export const orthographyCheckUseCase = async( openai: OpenAI,  options: Options 
                 Ejemplo de salida:
                 {
                     userScore: number,
-                    errores: string[], // ['error -> solución']
+                    errors: string[], // ['error -> solución']
                     message: string, // Usa emojis y texto para felicitar al usuario
                 }
-                
                 `
-
             },
             {
                 role: "user",
