@@ -1,7 +1,11 @@
 import { IsString } from "class-validator";
 
-export class ProsConsDiscusserDto {
+export class TranslateDto {
 
     @IsString()
     readonly prompt: string
+
+    @IsString()
+    readonly lang: string;
+
 }

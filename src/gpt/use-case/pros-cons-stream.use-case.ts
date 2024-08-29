@@ -27,8 +27,5 @@ export const prosConsDiscusserStreamUseCase = async( openai: OpenAI,  { prompt }
         model: "gpt-4o",
         temperature: 0.8,
         max_tokens: 500,
-        // response_format: {
-        //     type: 'json_object'
-        // }
     });
 }

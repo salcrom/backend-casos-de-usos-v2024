@@ -26,13 +26,7 @@ export const prosConsDiscusserUseCase = async( openai: OpenAI,  { prompt }: Opti
         model: "gpt-4o",
         temperature: 0.8,
         max_tokens: 500,
-        // response_format: {
-        //     type: 'json_object'
-        // }
     });
     
-    // console.log(completion)
-
-    // const jsonResp = JSON.parse(response.choices[0].message.content)
     return response.choices[0].message;
 }
